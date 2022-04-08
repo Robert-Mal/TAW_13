@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <form class="form-horizontal" method="post" name="createPost" id="createPost">
+        <div class="form-group mb-1">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Post title"
+             value="" [(ngModel)]="post.title">
+        </div>
+        <div class="form-group mb-1">
+            <label for="image">Image URL</label>
+            <input type="text" class="form-control" name="image" id="image" placeholder="Image URL" 
+            value="" [(ngModel)]="post.image">
+        </div>
+        <div class="form-group mb-1">
+            <label for="post">Post</label>
+            <textarea class="form-control" name="text" id="post" rows="4" cols="50" value=""
+             [(ngModel)]="post.text"></textarea>
+        </div>
+        
+        <button (click)="createPost()" class="btn btn-primary">Dodaj post</button>
+    </form>
+</div>

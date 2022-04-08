@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+<div *ngFor="let item of items$ | filter:filterText">
+  <div class="card" style="width: 18rem; margin: 5rem;">
+    <blog-item [image]="item.image" [text]="item.text" [id]="item.id">
+    </blog-item>
+  </div>
+</div>
+
+  
